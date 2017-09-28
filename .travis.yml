@@ -1,5 +1,6 @@
 language: python
 python:
 - '2.7'
-- '3.3'
 - pypy
+script: 
+- python codons.py insulin.fa 60 hemoglobinB.fa 51 rhodopsin.fa 96 collagen1.fa 127
