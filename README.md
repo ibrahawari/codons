@@ -7,4 +7,4 @@ An example of four mRNA transcripts is provided: insulin (60), hemoglobinB (51),
 
 Try running the following command as a demo:
 
-    python hw2.py insulin.fa 60 hemoglobinB.fa 51 rhodopsin.fa 96 collagen1.fa 127
+    python codons.py insulin.fa 60 hemoglobinB.fa 51 rhodopsin.fa 96 collagen1.fa 127
