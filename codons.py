@@ -4,7 +4,7 @@ def print_dictionary(dictionary):
     result = []
     for acid in dictionary:
         result_acid = {acid["Name"]: []}
-        print acid["Name"]
+        # print acid["Name"]
         for key in sorted(acid, key = acid.get):
             if ((key != "Name") & (key != "Total")):
                 if (acid["Total"] == 0):
@@ -16,7 +16,7 @@ def print_dictionary(dictionary):
                     "occurences": acid[key],
                     "utilization": percentage / 100
                 })
-                print "\t%s\t%i\t%f%s" % (key, acid[key], percentage, "%")
+                # print "\t%s\t%i\t%f%s" % (key, acid[key], percentage, "%")
         result.append(result_acid)
     return result
 
@@ -115,3 +115,4 @@ if __name__ == "__main__":
     for i in range(len(filenames)):
         dictionary = analyze(filenames[i], starts[i], dictionary)
     result = print_dictionary(dictionary)
+    print result
